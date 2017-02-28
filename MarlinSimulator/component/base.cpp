@@ -1,4 +1,4 @@
-#include <SDL/SDL.h>
+#include "SDL.h"
 #include "base.h"
 
 #define DRAW_SCALE 3

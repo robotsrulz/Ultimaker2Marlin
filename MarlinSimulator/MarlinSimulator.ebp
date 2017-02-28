@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<EmBitz_project_file>
+	<EmBitzVersion release="1.11" revision="0" />
+	<FileVersion major="1" minor="0" />
+	<Project>
+		<Option title="MarlinSimulator" />
+		<Option pch_mode="2" />
+		<Option compiler="armgcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\MarlinSimulator.exe" />
+				<Option object_output="obj\Debug\" />
+				<Option type="0" />
+				<Option compiler="armgcc" />
+				<Option projectDeviceOptionsRelation="0" />
+				<Compiler>
+					<Add option="-O0" />
+					<Add option="-g2" />
+					<Add symbol="AVR_ATmega2560=1" />
+					<Add symbol="ARDUINO=100" />
+					<Add symbol="F_CPU=16000000" />
+					<Add symbol="__AVR_ATmega2560__" />
+					<Add directory=".\avr_sim" />
+					<Add directory=".\arduino_sim" />
+					<Add directory=".\SDL" />
+				</Compiler>
+				<Assembler>
+					<Add option="--gdwarf-2" />
+				</Assembler>
+				<Linker>
+					<Add option="-lstdc++" />
+					<Add library="lib\libSDL.dll.a" />
+					<Add library="lib\libSDLmain.a" />
+					<Add directory=".\lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="..\Marlin\cardreader.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Marlin\cardreader.h" />
+		<Unit filename="..\Marlin\Configuration.h" />
+		<Unit filename="..\Marlin\Configuration_adv.h" />
+		<Unit filename="..\Marlin\ConfigurationStore.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Marlin\ConfigurationStore.h" />
+		<Unit filename="..\Marlin\dogm_font_data_marlin.h" />
+		<Unit filename="..\Marlin\dogm_lcd_implementation.h" />
+		<Unit filename="..\Marlin\DOGMbitmaps.h" />
+		<Unit filename="..\Marlin\electronics_test.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Marlin\electronics_test.h" />
+		<Unit filename="..\Marlin\fastio.h" />
+		<Unit filename="..\Marlin\language.h" />
+		<Unit filename="..\Marlin\lifetime_stats.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Marlin\lifetime_stats.h" />
+		<Unit filename="..\Marlin\LiquidCrystalRus.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Marlin\LiquidCrystalRus.h" />
+		<Unit filename="..\Marlin\Marlin.h" />
+		<Unit filename="..\Marlin\Marlin_main.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Marlin\MarlinSerial.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Marlin\MarlinSerial.h" />
+		<Unit filename="..\Marlin\motion_control.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Marlin\motion_control.h" />
+		<Unit filename="..\Marlin\pins.h" />
+		<Unit filename="..\Marlin\planner.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Marlin\planner.h" />
+		<Unit filename="..\Marlin\Sd2Card.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Marlin\Sd2Card.h" />
+		<Unit filename="..\Marlin\Sd2PinMap.h" />
+		<Unit filename="..\Marlin\SdBaseFile.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Marlin\SdBaseFile.h" />
+		<Unit filename="..\Marlin\SdFatConfig.h" />
+		<Unit filename="..\Marlin\SdFatStructs.h" />
+		<Unit filename="..\Marlin\SdFatUtil.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Marlin\SdFatUtil.h" />
+		<Unit filename="..\Marlin\SdFile.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Marlin\SdFile.h" />
+		<Unit filename="..\Marlin\SdInfo.h" />
+		<Unit filename="..\Marlin\SdVolume.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Marlin\SdVolume.h" />
+		<Unit filename="..\Marlin\Servo.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Marlin\Servo.h" />
+		<Unit filename="..\Marlin\speed_lookuptable.h" />
+		<Unit filename="..\Marlin\stepper.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Marlin\stepper.h" />
+		<Unit filename="..\Marlin\temperature.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Marlin\temperature.h" />
+		<Unit filename="..\Marlin\thermistortables.h" />
+		<Unit filename="..\Marlin\UltiLCD2.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Marlin\UltiLCD2.h" />
+		<Unit filename="..\Marlin\UltiLCD2_gfx.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Marlin\UltiLCD2_gfx.h" />
+		<Unit filename="..\Marlin\UltiLCD2_hi_lib.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Marlin\UltiLCD2_hi_lib.h" />
+		<Unit filename="..\Marlin\UltiLCD2_low_lib.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Marlin\UltiLCD2_low_lib.h" />
+		<Unit filename="..\Marlin\UltiLCD2_menu_first_run.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Marlin\UltiLCD2_menu_first_run.h" />
+		<Unit filename="..\Marlin\UltiLCD2_menu_maintenance.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Marlin\UltiLCD2_menu_maintenance.h" />
+		<Unit filename="..\Marlin\UltiLCD2_menu_material.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Marlin\UltiLCD2_menu_material.h" />
+		<Unit filename="..\Marlin\UltiLCD2_menu_print.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Marlin\UltiLCD2_menu_print.h" />
+		<Unit filename="..\Marlin\ultralcd.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Marlin\ultralcd.h" />
+		<Unit filename="..\Marlin\ultralcd_implementation_hitachi_HD44780.h" />
+		<Unit filename="..\Marlin\ultralcd_implementation_ultiboard_v2.h" />
+		<Unit filename="..\Marlin\ultralcd_st7920_u8glib_rrd.h" />
+		<Unit filename="..\Marlin\watchdog.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Marlin\watchdog.h" />
+		<Unit filename="arduino_sim\Arduino.h" />
+		<Unit filename="arduino_sim\binary.h" />
+		<Unit filename="arduino_sim\HardwareSerial.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="arduino_sim\HardwareSerial.h" />
+		<Unit filename="arduino_sim\LiquidCrystal.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="arduino_sim\LiquidCrystal.h" />
+		<Unit filename="arduino_sim\main.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="arduino_sim\new.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="arduino_sim\new.h" />
+		<Unit filename="arduino_sim\pins_arduino.h" />
+		<Unit filename="arduino_sim\Print.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="arduino_sim\Print.h" />
+		<Unit filename="arduino_sim\Printable.h" />
+		<Unit filename="arduino_sim\Stream.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="arduino_sim\Stream.h" />
+		<Unit filename="arduino_sim\Tone.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="arduino_sim\WCharacter.h" />
+		<Unit filename="arduino_sim\wiring.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="arduino_sim\wiring_analog.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="arduino_sim\wiring_digital.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="arduino_sim\wiring_private.h" />
+		<Unit filename="arduino_sim\wiring_pulse.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="arduino_sim\wiring_shift.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="arduino_sim\WString.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="arduino_sim\WString.h" />
+		<Unit filename="avr_sim\avr\eeprom.h" />
+		<Unit filename="avr_sim\avr\interrupt.h" />
+		<Unit filename="avr_sim\avr\io.h" />
+		<Unit filename="avr_sim\avr\iom2560.h" />
+		<Unit filename="avr_sim\avr\iomxx0_1.h" />
+		<Unit filename="avr_sim\avr\pgmspace.h" />
+		<Unit filename="avr_sim\avr\sim_io.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="avr_sim\avr\wdt.h" />
+		<Unit filename="avr_sim\util\delay.h" />
+		<Unit filename="component\adc.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="component\adc.h" />
+		<Unit filename="component\arduinoIO.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="component\arduinoIO.h" />
+		<Unit filename="component\base.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="component\base.h" />
+		<Unit filename="component\delegate.h" />
+		<Unit filename="component\display_HD44780.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="component\display_HD44780.h" />
+		<Unit filename="component\display_SSD1309.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="component\display_SSD1309.h" />
+		<Unit filename="component\heater.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="component\heater.h" />
+		<Unit filename="component\i2c.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="component\i2c.h" />
+		<Unit filename="component\led_PCA9632.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="component\led_PCA9632.h" />
+		<Unit filename="component\sdcard.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="component\sdcard.h" />
+		<Unit filename="component\serial.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="component\serial.h" />
+		<Unit filename="component\stepper.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="component\stepper.h" />
+		<Unit filename="SDL\begin_code.h" />
+		<Unit filename="SDL\close_code.h" />
+		<Unit filename="SDL\SDL.h" />
+		<Unit filename="SDL\SDL_active.h" />
+		<Unit filename="SDL\SDL_audio.h" />
+		<Unit filename="SDL\SDL_byteorder.h" />
+		<Unit filename="SDL\SDL_cdrom.h" />
+		<Unit filename="SDL\SDL_config.h" />
+		<Unit filename="SDL\SDL_config_win32.h" />
+		<Unit filename="SDL\SDL_copying.h" />
+		<Unit filename="SDL\SDL_cpuinfo.h" />
+		<Unit filename="SDL\SDL_endian.h" />
+		<Unit filename="SDL\SDL_error.h" />
+		<Unit filename="SDL\SDL_events.h" />
+		<Unit filename="SDL\SDL_getenv.h" />
+		<Unit filename="SDL\SDL_joystick.h" />
+		<Unit filename="SDL\SDL_keyboard.h" />
+		<Unit filename="SDL\SDL_keysym.h" />
+		<Unit filename="SDL\SDL_loadso.h" />
+		<Unit filename="SDL\SDL_main.h" />
+		<Unit filename="SDL\SDL_mouse.h" />
+		<Unit filename="SDL\SDL_mutex.h" />
+		<Unit filename="SDL\SDL_name.h" />
+		<Unit filename="SDL\SDL_opengl.h" />
+		<Unit filename="SDL\SDL_platform.h" />
+		<Unit filename="SDL\SDL_quit.h" />
+		<Unit filename="SDL\SDL_rwops.h" />
+		<Unit filename="SDL\SDL_stdinc.h" />
+		<Unit filename="SDL\SDL_syswm.h" />
+		<Unit filename="SDL\SDL_thread.h" />
+		<Unit filename="SDL\SDL_timer.h" />
+		<Unit filename="SDL\SDL_types.h" />
+		<Unit filename="SDL\SDL_version.h" />
+		<Unit filename="SDL\SDL_video.h" />
+		<Unit filename="sim_main.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</EmBitz_project_file>
