@@ -15,7 +15,7 @@
 				<Option projectDeviceOptionsRelation="0" />
 				<Compiler>
 					<Add option="-O0" />
-					<Add option="-g2" />
+					<Add option="-g3" />
 					<Add symbol="AVR_ATmega2560=1" />
 					<Add symbol="ARDUINO=100" />
 					<Add symbol="F_CPU=16000000" />
@@ -24,7 +24,12 @@
 					<Add directory=".\arduino_sim" />
 					<Add directory=".\SDL" />
 				</Compiler>
+				<Cpp>
+					<Add option="-g3" />
+				</Cpp>
 				<Assembler>
+					<Add option="-Wa,--keep-locals" />
+					<Add option="-Wa,--gdwarf-2" />
 					<Add option="--gdwarf-2" />
 				</Assembler>
 				<Linker>
@@ -309,7 +314,9 @@
 		</Unit>
 		<Extensions>
 			<code_completion />
-			<debugger />
+			<debugger>
+				<target_debugging_settings target="Debug" active_interface="" />
+			</debugger>
 			<envvars />
 		</Extensions>
 	</Project>

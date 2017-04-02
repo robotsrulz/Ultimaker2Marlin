@@ -16,3 +16,4 @@ Marlin/Visual Micro/Configuration.Debug.vmps.xml
 bin/
 obj/
 *.html
+MarlinSimulator/MarlinSimulator.depend
