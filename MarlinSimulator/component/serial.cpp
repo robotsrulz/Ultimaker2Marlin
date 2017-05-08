@@ -175,10 +175,12 @@ void serialSim::UART_UDR0_callback(uint8_t oldValue, uint8_t& newValue)
     }
 
     //-----------------------------------------------------------
+    DWORD dwNumBytesWritten;
     if ( hPort1 != INVALID_HANDLE_VALUE ) {
-        DWORD dwNumBytesWritten;
         WriteFile (hPort1, &newValue, 1, &dwNumBytesWritten, NULL);
     }
+
+    WriteFile (GetStdHandle(STD_OUTPUT_HANDLE), &newValue, 1, &dwNumBytesWritten, NULL);
 }
 
 void serialSim::draw(int x, int y)
